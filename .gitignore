@@ -1,0 +1,60 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+S
+# PyCharm / IDE
+.idea/
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Node.js / React (future web version)
+node_modules/
+.next/
+coverage/
+
+# iOS / Xcode (future iPhone version)
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
