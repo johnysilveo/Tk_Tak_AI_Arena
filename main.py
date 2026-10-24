@@ -1,11 +1,23 @@
-from core.board import Board
+from core.game import Game
 
-board = Board(3)
+# Create a new game
+game = Game(rows=5, cols=5, win_length=4)
 
-print(board.make_move(1, 1, "X"))  # True
-print(board.make_move(1, 1, "O"))  # False - occupied
-print(board.make_move(5, 5, "X"))  # False - out of bounds
-print(board.make_move(0, 0, "A"))  # False - invalid symbol
+# Make two moves
+game.make_move(0, 0)
+game.make_move(1, 1)
 
-for row in board.cells:
-    print(row)
+# Display state before reset
+print("Before reset:")
+print("Board:", game.board.cells)
+print("Current player:", game.current_player)
+
+# Restart the game
+game.reset()
+
+# Display state after reset
+print("\nAfter reset:")
+print("Board:", game.board.cells)
+print("Current player:", game.current_player)
+print("Status:", game.status)
+print("Winner:", game.winner)
